@@ -1,21 +1,19 @@
 package net.treyvon.insomniacharm.item.custom;
 
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.Item;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.entity.player.Player;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 import static net.treyvon.insomniacharm.Config.insomniaValue;
 
 public class CharmItem extends Item implements ICurioItem{
-    public CharmItem(Properties properties) {
-        super(new Item.Properties().stacksTo(1).durability(0));
+    public CharmItem(Item.Properties properties) {
+        super(properties);
     }
 
     @Override
