@@ -13,7 +13,7 @@ public class ModItems {
 
     // Registers the charm item under the name "insomniacharm".
     public static final DeferredItem<Item> CHARMINSOMNIA = ITEMS.registerItem("insomniacharm", CharmItem::new,
-            new Item.Properties().stacksTo(1));
+            props -> props.stacksTo(1));
 
     // Called from the main mod class constructor. Attaches the register to the mod event bus
     // so the items above are actually registered when the game fires its registry event.
