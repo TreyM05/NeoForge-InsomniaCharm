@@ -91,12 +91,12 @@ configurations {
 
 dependencies {
     // Compile against only the API artifact
-    compileOnly "top.theillusivec4.curios:curios-neoforge:10.0.1+1.21.4:api"
+    compileOnly "top.theillusivec4.curios:curios-neoforge:11.0.1+1.21.5:api"
 
     // Use the full Curios API jar at runtime
-    runtimeOnly "top.theillusivec4.curios:curios-neoforge:10.0.1+1.21.4"
+    runtimeOnly "top.theillusivec4.curios:curios-neoforge:11.0.1+1.21.5"
 
-    implementation "top.theillusivec4.curios:curios-neoforge:10.0.1+1.21.4"
+    implementation "top.theillusivec4.curios:curios-neoforge:11.0.1+1.21.5"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

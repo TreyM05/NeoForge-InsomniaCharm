@@ -16,7 +16,7 @@ public class Config
     // Default is 20, and the value is within the range 0-24000.
     private static final ModConfigSpec.IntValue INSOMNIA_VALUE = BUILDER
             .comment("Number of ticks a player must go without sleeping before their insomnia effect is reset")
-            .defineInRange("insomniaValue", 20, 0, 24000);
+            .defineInRange("insomniaValue", 60000, 0, 72000);
 
 
     // The finished, immutable spec.

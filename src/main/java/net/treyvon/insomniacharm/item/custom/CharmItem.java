@@ -18,18 +18,15 @@ public class CharmItem extends Item implements ICurioItem{
 
     @Override
     public void curioTick(SlotContext slotContext, ItemStack stack) {
-        // Get the player wearing the item
-        Player player = (Player) slotContext.entity();
 
         // Check if the player is a ServerPlayer (to avoid client-side issues)
-        if (player instanceof ServerPlayer serverPlayer) {
+        if (slotContext.entity() instanceof ServerPlayer serverPlayer) {
             int timeSinceLastRest = serverPlayer.getStats().getValue(Stats.CUSTOM.get(Stats.TIME_SINCE_REST));
 
             // Check if the stat is over the insomniaValue
             if (timeSinceLastRest > insomniaValue) {
                 // Reset the "time since last rest" stat
                 serverPlayer.resetStat(Stats.CUSTOM.get(Stats.TIME_SINCE_REST));
-                System.out.println("Player's insomnia has been reset.");
             }
         }
     }
