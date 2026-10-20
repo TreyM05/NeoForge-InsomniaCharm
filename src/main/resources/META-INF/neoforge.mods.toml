@@ -14,7 +14,7 @@ license="${mod_license}"
 modId="insomniacharm"
 
 # The version number of the mod
-version="21.5"
+version="21.8"
 
 # A display name for the mod
 displayName="Insomnia Charm"
